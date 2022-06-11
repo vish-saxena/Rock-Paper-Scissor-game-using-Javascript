@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+ 
+
+:root{
+    --purple-color: #00008B ; 
+    --voilet-color: #0d324d;
+    --white-color: #fff;
+    --blue-color: #1c2042;
+    --grey-color: rgb(224, 218, 218);
+}
+
+*,
+*:before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--blue-color);
+}
+
+.container{
+    width: 85%;
+    max-width: 30rem;
+    background-color: var(--grey-color);
+    padding: 4rem 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.35);
+
+}
+
+.header{
+    min-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.header .tittle {
+    font-weight: 700;
+    font-size: 1.2rem;
+    list-style: 1.5;
+    text-transform: uppercase;
+}
+
+.scores p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.scores p span {
+    font-weight: 700;
+}
+
+.weapons {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weapons button{
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.details{
+    margin-top: 2rem; 
+    text-align: center;
+}
+
+.scores, .details{
+    font-size: 1.1rem;
+
+}
+
+.result{
+    width: 12rem;
+    padding: 0.8px 0;
+    margin: 2rem auto;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.user-choice, .computer-choice{
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+}
+
+span {
+    font-weight: 900;
+}
